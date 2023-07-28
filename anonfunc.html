@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code with Dan</title>
+</head>
+<body>
+    <p>Anonymous function</p>
+    <script>
+        var func=new Function('x','y','return x*y;')
+
+        function secondfunc(){
+            var result=func(10,10);
+            document.write(result);
+        }
+        
+    </script>
+    <form action="">
+        <input type="button" onclick="secondfunc()" value="call func">
+    </form>
+</body>
+</html>
