@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this keyword</title>
+</head>
+<body>
+    <script>
+        function book(title,author){
+            this.title=title;
+            this.author=author;
+        }
+        var mybook= new book('Health','Doreen');
+        document.write('Book title is: '+mybook.title +'<br>')
+        document.write('Book author is: '+mybook.author+'<br>');
+    </script>    
+</body>
+</html>
